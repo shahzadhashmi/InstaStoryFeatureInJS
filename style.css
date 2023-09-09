@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 500px;
+    width: 320px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #111;
+    overflow: hidden;
+    position: relative;
+}
+
+.fullScreen {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+.instaStories {
+    height: 120px;
+    padding: 20px;
+    white-space: nowrap;
+    border-bottom: 1px solid #dadada;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.instaStories::-webkit-scrollbar {
+    display: none;
+}
+
+.story {
+    height: 80px;
+    width: 80px;
+    background-color: beige;
+    border: 2px solid red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.story img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
